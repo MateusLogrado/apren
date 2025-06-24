@@ -1,26 +1,37 @@
-body{
+body {
     padding: 0;
     margin: 0;
     text-align: center;
     background-color: rgb(245, 150, 189);
+    padding-bottom: 70px;
 }
 
-a{
+a {
     padding: 10px;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
-input, button{
+input, button {
     border-radius: 8px;
     background-color: black;
     color: white;
     text-align: center;
 }
 
-nav{
+nav {
     width: 100%;
     padding: 10px 0;
     border: 0;
     background-color: black;
+}
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
 }
