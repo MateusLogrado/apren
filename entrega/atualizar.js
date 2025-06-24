@@ -41,7 +41,7 @@ button.addEventListener("click", (e)=>{
 
     })
     .catch((err)=>{
-        console.error("Erro: ", err)
+        console.error("Erro ao atualizar a entrega: ", err)
     })
 
 })

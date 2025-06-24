@@ -24,7 +24,7 @@ button.addEventListener("click", (e)=>{
     })
     .then()
     .catch((err)=>{
-        console.error("Erro: ", err)
+        console.error("Erro ao apagar o produto: ", err)
     })
 
 })

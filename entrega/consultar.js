@@ -30,7 +30,7 @@ button.addEventListener("click", (e)=>{
         res.innerHTML += `----------------------------------------------- <br>`
     })
     .catch((err)=>{
-        console.error("Erro: ", err)
+        console.error("Erro ao consultar a entrega: ", err)
     })
 
 })
