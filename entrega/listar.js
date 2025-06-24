@@ -16,8 +16,8 @@ button.addEventListener("click", (e)=>{
         valores.forEach(val => {
             res.innerHTML += `Nome: ${val.nome} <br>`
             res.innerHTML += `quantidade: ${val.quantidade} <br>`
-            res.innerHTML += `preço: ${val.preco} <br>`
-            res.innerHTML += `total: ${val.total} <br><br>`
+            res.innerHTML += `preço: R$${val.preco} <br>`
+            res.innerHTML += `total: R$${val.total} <br><br>`
             res.innerHTML += `----------------------------------------------- <br>`
         });
     })

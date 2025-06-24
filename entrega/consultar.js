@@ -24,8 +24,8 @@ button.addEventListener("click", (e)=>{
         val.produtos.forEach(prod => {
             res.innerHTML += `Nome do produto: ${prod.nome} <br>`
             res.innerHTML += `Quantidade: ${prod.quantidade} <br>`
-            res.innerHTML += `Preço: ${prod.preco} <br>`
-            res.innerHTML += `Total: ${prod.total} <br><br>`
+            res.innerHTML += `Preço: R$${prod.preco} <br>`
+            res.innerHTML += `Total: R$${prod.total} <br><br>`
         });
         res.innerHTML += `----------------------------------------------- <br>`
     })
