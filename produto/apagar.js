@@ -1,0 +1,30 @@
+let res = document.getElementById("res")
+let button = document.getElementById("button")
+
+button.addEventListener("click", (e)=>{
+    e.preventDefault()
+
+    let codProduto = document.getElementById("id").value
+
+    const valores = {
+        codProduto: codProduto
+    }
+
+    fetch(`http://localhost:8081/produto/${codProduto}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type":"application/json"
+        },
+        body: JSON.stringify(valores)
+    })
+    .then(resp => {
+        if(resp.status === 204){
+            res.innerHTML = "Dados excluidos com sucesso"
+        }
+    })
+    .then()
+    .catch((err)=>{
+        console.error("Erro: ", err)
+    })
+
+})

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./produto/cadastrar.js" defer></script>
+    <title>Cadastro de produtos</title>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Principal</a>
+        <a href="./cadastrarEntre.html">Cadastrar Entrega</a>
+        <a href="./listarEntre.html">Listar Entrega</a>
+        <a href="./atualizarEntre.html">Atualizar Entrega</a>
+        <a href="./apagarEntre.html">Apagar Entrega</a>
+        <a href="./consultarEntre.html">Consultar Entrega</a>
+        <a href="./cadastrarProdu.html">Cadastrar Produto</a>
+        <a href="./listarProdu.html">Listar Produto</a>
+        <a href="./atualizarProdu.html">Atualizar Produto</a>
+        <a href="./apagarProdu.html">Apagar Produto</a>
+        <a href="./consultarProdu.html">Consultar Produto</a>
+    </nav>
+    <h1>Sistema de cadastro de produtos</h1>
+    <form>
+        <label for="nome">Digite o nome do produto</label><br>
+        <input type="text" id="nome"><br>
+        <label for="quantidade">Digite a quantidade do produto</label><br>
+        <input type="number" id="quantidade"><br>
+        <label for="preco">Digite o preço do produto</label><br>
+        <input type="number" id="preco"><br>
+        <label for="entrega_cod">Digite o codigo da entrega</label><br>
+        <input type="number" id="entrega_cod"><br><br>
+        <button id="button">Cadastrar</button><br><br>
+        <div id="res"></div>
+    </form>
+</body>
+</html>
