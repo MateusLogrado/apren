@@ -18,9 +18,7 @@ button.addEventListener("click", (e)=>{
         body: JSON.stringify(valores)
     })
     .then(resp => {
-        if(resp.status === 204){
-            res.innerHTML = "Dados excluidos com sucesso"
-        }
+        res.innerHTML = "Dados excluidos com sucesso"
     })
     .then()
     .catch((err)=>{

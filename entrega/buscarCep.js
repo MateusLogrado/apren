@@ -9,8 +9,7 @@ buscarCep.addEventListener("click", (e)=>{
     let localidade = document.getElementById("localidade")
     let uf = document.getElementById("uf")
 
-    fetch(`http://viacep.com.br/ws/${cep}/json/`, {
-    })
+    fetch(`http://viacep.com.br/ws/${cep}/json/`)
     .then(resposta => resposta.json())
     .then(dados => {
         
@@ -19,9 +18,9 @@ buscarCep.addEventListener("click", (e)=>{
         localidade.value = dados.localidade;
         uf.value = dados.uf;
         
-    } )
+    })
     .catch((err)=>{
-        console.error("Erro: ", err)
+        console.error("Erro : ", err)
     })
 
 })

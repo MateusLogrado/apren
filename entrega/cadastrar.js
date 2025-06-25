@@ -29,12 +29,7 @@ button.addEventListener("click", (e)=>{
     })
     .then(resp => resp.body)
     .then(()=>{
-        res.innerHTML = `Logradouro: ${logradouro} <br>`
-        res.innerHTML += `complemento: ${complemento} <br>`
-        res.innerHTML += `Bairro: ${bairro} <br>`
-        res.innerHTML += `localidade: ${localidade} <br>`
-        res.innerHTML += `uf: ${uf} <br>`
-        res.innerHTML += `responsavel: ${nomeResponsavel} <br>`
+        res.innerHTML = "Dados cadastrados com sucesso"
 
     })
     .catch((err)=>{

@@ -30,11 +30,7 @@ button.addEventListener("click", (e)=>{
     })
     .then(resp => resp.body)
     .then(()=>{
-        res.innerHTML = `Nome: ${nome} <br>`
-        res.innerHTML += `quantidade: ${quantidade} <br>`
-        res.innerHTML += `preço: ${preco} <br>`
-        res.innerHTML += `total: ${total.toFixed(2)} <br>`
-        res.innerHTML += `Codigo da entrega: ${entrega_cod} <br>`
+        res.innerHTML = "Dados atualizados com sucesso"
     })
     .catch((err)=>{
         console.error("Erro: ", err)
