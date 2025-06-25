@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="./produto/atualizar.js" defer></script>
+    <script src="./produto/buscarId.js" defer></script>
     <title>atualizar Produtos</title>
 </head>
 <body>
@@ -24,7 +25,10 @@
     <h1>Sistema de atualização de produtos</h1>
     <form>
         <label for="id">Digite o codigo do produto</label><br>
-        <input type="text" id="id"><br>
+        <input type="text" id="id"><br><br>
+        <button id="buscarId">Buscar pelo Codigo</button><br><br>
+
+
         <label for="nome">Digite o nome do produto</label><br>
         <input type="text" id="nome"><br>
         <label for="quantidade">Digite a quantidade do produto</label><br>
@@ -33,7 +37,7 @@
         <input type="number" id="preco"><br>
         <label for="entrega_cod">Digite o codigo da entrega</label><br>
         <input type="number" id="entrega_cod"><br><br>
-        <button id="button">Cadastrar</button><br><br>
+        <button id="button">Atualizar</button><br><br>
         <div id="res"></div>
     </form>
     <footer>
